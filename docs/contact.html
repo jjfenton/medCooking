@@ -7,10 +7,12 @@
     <title>Contact us!</title>
     <link rel="stylesheet" href="./output.css">
 </head>
+
 <body>
-    
+    <div class="flex flex-col h-screen max-w-full">
+
     <!-- navbar -->
-    <nav class="top-0 left-0  w-full p-3 m-12 bg-white shadow-lg">
+    <nav class="top-0 left-0 z-20 max-w-full p-1 m-0 bg-white shadow-lg">
         <div class="max-w-full mx-auto px-10">
             <div class="flex justify-between">
                 <div class="flex space-x-7">
@@ -51,16 +53,16 @@
         <!-- mobile menu -->
         <div class="hidden mobile-menu">
             <ul class="">
-                <li class="active"><a href="index.html" class="block text-sm px-2 py-4 hover:bg-gray-500 uppercase">home</a></li>
-                <li><a href="recipes.html" class="block text-sm px-2 py-4 hover:bg-gray-500 transition duration-200 uppercase">recipes</a></li>
-                <li><a href="contact.html" class="block text-sm px-2 py-4 hover:bg-gray-500 transition duration-200 uppercase">contact</a></li>
+                <li class="active"><a href="index.html" class="block text-sm px-2 py-4 hover:bg-gray-300 uppercase">home</a></li>
+                <li><a href="recipes.html" class="block text-sm px-2 py-4 hover:bg-gray-300 transition duration-200 uppercase">recipes</a></li>
+                <li><a href="contact.html" class="block text-sm px-2 py-4 hover:bg-gray-300 transition duration-200 uppercase">contact</a></li>
             </ul>
         </div>
 
     </nav>
 
-    <div class="p-6">
-        <p>
+    <main class="flex-1 overflow-y-auto p-5">
+       
             "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
             eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
             voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
@@ -131,15 +133,20 @@
             eum fugiat quo voluptas nulla pariatur?"
             <br>
             <br>
+            "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
+            eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
+            voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
+            voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+            sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima
+            veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis
+            autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem
+            eum fugiat quo voluptas nulla pariatur?"
 
-        </p>
-
-    </div>
-
+    
 
     <!-- footer -->
     <footer
-        class="bottom-0 left-0 z-20 w-full p-4 bg-white border-t border-gray-200 shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800 dark:border-gray-600">
+        class="bottom-0 left-0 max-w-full p-4 mt-5 border-t border-gray-400 md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800 dark:border-gray-600">
         <span class="text-sm text-gray-500 sm:text-center dark:text-gray-500">© 2023 <a
                 href="https://jjfenton.github.io/medCooking/" class="hover:underline">Healthy Food™</a>. All Rights
             Reserved.
@@ -156,6 +163,8 @@
             </li>
         </ul>
     </footer>
+</main>
     <script src="./index.js"></script>    
+</div>
 </body>
 </html>
