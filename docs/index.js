@@ -16,7 +16,7 @@ var btn2 = document.getElementsByClassName("recipeCard");
 // Get close modal button 
 var span = document.getElementsByClassName("close");
 
-// When the user clicks the button, open the modal 
+// Open modal when user clicks on recipe button 
 btn2[0].onclick = function() {
     modal[0].style.display = "block";
 }
@@ -24,11 +24,28 @@ btn2[0].onclick = function() {
 btn2[1].onclick = function() {
     modal[1].style.display = "block";
 }
-// When the user clicks on <span> (x), close the modal
+
+btn2[2].onclick = function() {
+    modal[2].style.display = "block";
+}
+
+btn2[3].onclick = function() {
+    modal[3].style.display = "block";
+}
+
+// Close modal when user clicks on the close button
 span[0].onclick = function() {
     modal[0].style.display = "none";
 }
 
 span[1].onclick = function() {
     modal[1].style.display = "none";
+}
+
+span[2].onclick = function() {
+    modal[2].style.display = "none";
+}
+
+span[3].onclick = function() {
+    modal[3].style.display = "none";
 }
