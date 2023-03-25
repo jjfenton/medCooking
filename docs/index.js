@@ -36,6 +36,10 @@ btn2[3].onclick = function() {
 btn2[4].onclick = function() {
     modal[4].style.display = "block";
 }
+btn2[5].onclick = function() {
+    modal[5].style.display = "block";
+}
+
 
 
 // Close modal when user clicks on the close button
@@ -57,4 +61,8 @@ span[3].onclick = function() {
 
 span[4].onclick = function() {
     modal[4].style.display = "none";
+}
+
+span[5].onclick = function() {
+    modal[5].style.display = "none";
 }
