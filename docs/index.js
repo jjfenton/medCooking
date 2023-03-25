@@ -5,9 +5,30 @@ btn.addEventListener("click", () =>{
     menu.classList.toggle("hidden");
     });
 
-function toggleModal(modalID) {
-    document.getElementById(modalID).classList.toggle("hidden");
-    document.getElementById(modalID + "-backdrop").classList.toggle("hidden");
-    document.getElementById(modalID).classList.toggle("flex");
-    document.getElementById(modalID + "-backdrop").classList.toggle("flex");
-    }
+
+// Get modal
+var modal = document.getElementsByClassName('modal');
+
+// Get modal button
+var btn2 = document.getElementsByClassName("recipeCard");
+
+
+// Get close modal button 
+var span = document.getElementsByClassName("close");
+
+// When the user clicks the button, open the modal 
+btn2[0].onclick = function() {
+    modal[0].style.display = "block";
+}
+
+btn2[1].onclick = function() {
+    modal[1].style.display = "block";
+}
+// When the user clicks on <span> (x), close the modal
+span[0].onclick = function() {
+    modal[0].style.display = "none";
+}
+
+span[1].onclick = function() {
+    modal[1].style.display = "none";
+}
